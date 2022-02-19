@@ -57,12 +57,27 @@ const propmtQuestions = () => {
       type: "input",
       name: "contribution",
       message:
-        "Provide a description of the contributions to the project (Required)",
+        "Provide a description of the contributions to the project (i.e. who did what) (Required)",
       validate: (contributionInput) => {
         if (contributionInput) {
           return true;
         } else {
           console.log("You need to enter contribution information!");
+          return false;
+        }
+      },
+    },
+    // ADD TESTS //
+    {
+      type: "input",
+      name: "tests",
+      message:
+        "Provide testing instructions for viewers to replicate on their local machine (Required)",
+      validate: (testsInput) => {
+        if (testsInput) {
+          return true;
+        } else {
+          console.log("You need to enter testing instructions!");
           return false;
         }
       },
