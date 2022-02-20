@@ -8,10 +8,10 @@ Using the README generator, users can quickly and easily generate a README file 
 
 ## Table of Contents
 
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [Video] (#video)
-- [License] (#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Video](#video)
+- [License](#license)
 
 ## Installation
 
@@ -36,3 +36,5 @@ All dependencies must be installed prior to using application. Please make sure 
 Please view a demonstration of the application in action here:
 
 ## License
+
+MIT License

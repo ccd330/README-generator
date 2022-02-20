@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
-const propmtQuestions = () => {
+const promptQuestions = () => {
   return inquirer.prompt([
     {
       type: "input",
@@ -54,6 +54,19 @@ const propmtQuestions = () => {
       },
     },
     {
+      type: "confirm",
+      name: "confirmLicense",
+      message: "Would you like to add a license to your project?",
+      default: true,
+    },
+    {
+      type: "checkbox",
+      name: "licenses",
+      message: "What license did you create this project with?",
+      choices: ["Apache", "MIT", "GNU", "BSD", "ISC"],
+      when: ({ confirmLicense }) => confirmLicense,
+    },
+    {
       type: "input",
       name: "contribution",
       message:
@@ -67,7 +80,6 @@ const propmtQuestions = () => {
         }
       },
     },
-    // ADD TESTS //
     {
       type: "input",
       name: "tests",
@@ -84,41 +96,51 @@ const propmtQuestions = () => {
     },
     {
       type: "input",
-      name: "question",
+      name: "username",
       message:
-        "Provide a description of how viewers can reach you with questions about your project, including your email address (Required)",
-      validate: (questionInput) => {
-        if (questionInput) {
+        "Provide your GitHub username (do not include the @ symbol) (Required)",
+      validate: (usernameInput) => {
+        if (usernameInput) {
           return true;
         } else {
-          console.log("You need to enter contact information!");
+          console.log("You need to enter your GitHub username!");
           return false;
         }
       },
     },
     {
-      type: "confirm",
-      name: "confirmLicense",
-      message: "Would you like to add a license to your project?",
-      default: true,
-    },
-    {
-      type: "checkbox",
-      name: "licenses",
-      message: "What license did you create this project with?",
-      choices: ["Apache", "MIT", "GNU", "BSD", "ISC"],
-      when: ({ confirmLicense }) => confirmLicense,
+      type: "input",
+      name: "email",
+      message:
+        "Provide your email so that viewers may contact you about your project(Required)",
+      validate: (emailInput) => {
+        if (emailInput) {
+          return true;
+        } else {
+          console.log("You need to enter your email!");
+          return false;
+        }
+      },
     },
   ]);
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(`./dist/ExampleREADME.md`, data, (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Your README has been successfully created!");
+    }
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+  const questions = await promptQuestions();
+  writeToFile(questions.fileName, generateMarkdown(questions));
+}
 
 // Function call to initialize app
 init();
-
-propmtQuestions();
