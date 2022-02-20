@@ -1,35 +1,34 @@
-# Pojrct title
+# README Generator
 
-  ## Badges
+  
+  ## License
+  ![licenseBadge](https://img.shields.io/badge/License-MIT-blue.svg)
+  MIT
+  [Full license information](https://opensource.org/licenses/MIT).
   
 
   ## Table of Contents
-  * [Description] (#description)
-  * [Installation Instructions] (#installation-instructions)
-  * [Usage] (#usage)
-  * [License] (#license)
-  * [Contributions] (#contributions)
-  * [Test Instructions] (#test-instructions)
-  * [Questions] (#questions)
+  * [Description](#description)
+  * [Installation Instructions](#installation-instructions)
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Test Instructions](#test-instructions)
+  * [Questions](#questions)
 
   ## Description
-  descriot
+  This project generates a README file for a user based on CLI input.
 
   ## Installation Instructions
-  rfjrf
+  To generate your own README, git clone the repo down to your local so you have the Node project on your local and run npm install.
 
   ## Usage
-  desript
-
-  ## License
-  
-  
+  All dependencies must be installed prior to using application. Please make sure you are in the root folder when running the code.
 
   ## Contributions
-  efj
+  I was the sole owner.
 
   ## Test Instructions
-  ff
+  N/A
 
   # Questions
   Have a question about this project? Feel free to reach me at claudiacdavis@gmail.com, and see more of work my at https://github.com/ccd330.
