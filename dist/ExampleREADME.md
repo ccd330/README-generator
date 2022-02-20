@@ -4,7 +4,7 @@
   ## License
   ![licenseBadge](https://img.shields.io/badge/License-MIT-blue.svg)
   MIT
-  [Full license information](https://opensource.org/licenses/MIT).
+  [See full license information](https://opensource.org/licenses/MIT).
   
 
   ## Table of Contents
