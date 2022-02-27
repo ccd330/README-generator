@@ -33,7 +33,7 @@ All dependencies must be installed prior to using application. Please make sure 
 
 ## Video
 
-Please view a demonstration of the application in action here:
+Please view a demonstration of the application in action here: https://drive.google.com/file/d/1cmslqOpUc03ArBZ9cCrd9TWK-t0dvTcn/view?usp=sharing
 
 ## License
 
