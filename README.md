@@ -13,9 +13,11 @@ Using the README generator, users can quickly and easily generate a README file 
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Video](#video)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Video](#video)
+* [Questions](#questions)
 
 ## Installation
 
@@ -35,7 +37,13 @@ After answering all the prompts, your README file will be named 'ExampleREADME.m
 
 All dependencies must be installed prior to using application. Please make sure you are in the root folder when running the code.
 
+## Contributions
+  This project was completed by Claudia (ccd330).
+
 ## Video
 
 Please view a demonstration of the application in action here: https://drive.google.com/file/d/1cmslqOpUc03ArBZ9cCrd9TWK-t0dvTcn/view?usp=sharing
+
+## Questions
+Have a question about this project? Feel free to reach me at claudiacdavis@gmail.com, and see more of work my at https://github.com/ccd330.
 
