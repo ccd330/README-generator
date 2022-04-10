@@ -11,6 +11,8 @@ When creating an open source project on GitHub, it’s important to have a high-
 
 Using the README generator, users can quickly and easily generate a README file by using a command-line application to generate one.
 
+<img src="https://github.com/ccd330/README-generator/blob/main/dist/demo.png" />
+
 ## Table of Contents
 
 * [Installation](#installation)
