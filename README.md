@@ -1,5 +1,10 @@
 # README-generator: Node.js & ES6+
 
+## License
+  ![licenseBadge](https://img.shields.io/badge/License-MIT-blue.svg)
+  MIT
+  [See full license information](https://opensource.org/licenses/MIT).
+
 ## Description
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
@@ -11,7 +16,6 @@ Using the README generator, users can quickly and easily generate a README file 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Video](#video)
-- [License](#license)
 
 ## Installation
 
@@ -35,6 +39,3 @@ All dependencies must be installed prior to using application. Please make sure 
 
 Please view a demonstration of the application in action here: https://drive.google.com/file/d/1cmslqOpUc03ArBZ9cCrd9TWK-t0dvTcn/view?usp=sharing
 
-## License
-
-MIT License
